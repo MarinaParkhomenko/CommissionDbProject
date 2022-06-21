@@ -1,0 +1,77 @@
+﻿@model CommissionProject.Abiturient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <br />
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FPT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FPT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OlympiadMark)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OlympiadMark)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicalCertificate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicalCertificate)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    <button type="button" class="btn btn-success">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+    </button> |
+    <button type="button" class="btn btn-info">
+        @Html.ActionLink("Back to List", "Index")
+    </button> 
+</p>

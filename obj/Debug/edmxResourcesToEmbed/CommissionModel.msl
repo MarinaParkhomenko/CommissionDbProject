@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CommissionDbModelStoreContainer" CdmEntityContainer="CommissionDbEntities1">
+    <EntitySetMapping Name="Abiturients">
+      <EntityTypeMapping TypeName="CommissionDbModel.Abiturient">
+        <MappingFragment StoreEntitySet="Abiturient">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="GPA" ColumnName="GPA" />
+          <ScalarProperty Name="ZNO" ColumnName="ZNO" />
+          <ScalarProperty Name="FPT" ColumnName="FPT" />
+          <ScalarProperty Name="OlympiadMark" ColumnName="OlympiadMark" />
+          <ScalarProperty Name="MedicalCertificate" ColumnName="MedicalCertificate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="CommissionDbModel.Application">
+        <MappingFragment StoreEntitySet="Application">
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="AbiturientId" ColumnName="AbiturientId" />
+          <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="CommissionDbModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculty">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specialities">
+      <EntityTypeMapping TypeName="CommissionDbModel.Speciality">
+        <MappingFragment StoreEntitySet="Speciality">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="QuantityFree" ColumnName="QuantityFree" />
+          <ScalarProperty Name="QuantityLicense" ColumnName="QuantityLicense" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
